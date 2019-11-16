@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Loan Portal</title>
+</head>
+<body bgcolor="#E6E6FA">
+<h1 align="center"><font face="Cambria">IBS BANK</h1>
+<h1 align="center"><font face="Cambria">Home Loan Application</h1>
+<br>
+<h3>Home Loan - Benefits and Features</h3>
+<p style="font-size:20px">A Home is one of the biggest purchases in an individual's life. To buy a home without securing a home loan is tough financially for most people. We, at IBS Bank, understand the needs of our customers and partner with them so that they can become proud home owners on terms that are fair and simple. With a IBS Bank Home Loan, you can buy a flat or a house without having to worry about putting together a huge down payment.</p>        
+<h3>Key Benefits:</h3>
+<ul>
+<li style="font-size:20px">Simple and hassle free loan processing with minimum turn-around time.</li>
+<li style="font-size:20px">Loans up to 90% of cost of property based on eligibility.</li>
+<li style="font-size:20px">Term Loan secured against residential properties</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<table align = "center" border = "1" style="font-size:18px" >
+  <tr>
+    <th align = "center" width="25%">Rate of Interest</th>
+    <th align = "center" width="25%">Maximum Loan Limit</th>
+    <th align = "center" width="25%">Minimum Loan Limit</th>
+  </tr>
+  <tr>
+    <td align = "center" width="25%">${loanTypeBean.interestRate}</td>
+    <td align = "center" width="25%">${loanTypeBean.maximumLimit}</td>
+    <td align = "center" width="25%">${loanTypeBean.minimumLimit}</td>
+  </tr>
+</table>
+<br/>
+<br/>
+<h2 align = "center">Calculate EMI</h2>
+<br/>
+<form action="homeCalculateEMI2" method="get">
+<div align = "center">
+<label style="font-size:20px">Enter Loan Amount:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="range" id="loanAmtRange" name="loanAmount" min=${loanTypeBean.minimumLimit} max=${loanTypeBean.maximumLimit} value="100000" step="1000" required onchange="updateTextInput(this.value);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<script> function updateTextInput(val) {document.getElementById('loanAmtInput').value = val;} </script>
+<label style="font-size:18px">&ensp; INR &nbsp;</label>
+<input type="number" id="loanAmtInput" name="loanAmount" value="" min=${loanTypeBean.minimumLimit} max=${loanTypeBean.maximumLimit} step="1000" required onchange="updateSlider(this.value)">
+<script>function updateSlider(val){document.getElementById('loanAmtRange').value = val;}</script>
+<br/><br/><br/>
+<label style="font-size:20px">Enter Loan Tenure:</label>
+<input type="number" name="loanTenure" min="1" max="120" required>
+<br/><br/>
+<input type="submit" value="Submit" style="height:30px;width:80px">
+<input type="reset" style="height:30px;width:80px">
+</form>
+<br/><br/><br/><br/>
+<label style="font-size:20px">EMI Amount: </label>
+<strong>${emi}</strong>
+<input type="reset" style="height:30px;width:80px">
+<a href="homeCalculateEMI3">
+<button style="height:30px;width:190px" type="button">View complete loan details</button>
+</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<table align = "center" border = "1" style="font-size:18px">
+<tr>
+<th align = "center" width="25%">EMI Amount</th>
+<th align = "center" width="25%">Principle Amount</th>
+<th align = "center" width="25%">Interest Amount</th>
+</tr>
+<c:forEach var="d" items="${tableDisplay}">
+<tr>
+<td align = "center" width="25%">INR ${d.emiAmount }</td>
+<td align = "center" width="25%">INR ${d.principle }</td>
+<td align = "center" width="25%">INR ${d.interest }</td>
+</tr>
+</c:forEach>
+</table>
+<br/>
+<a href="savingsAccountDetails">
+<button type="button">Apply Loan</button>
+</a>
+<hr>
+</body>
+</html>

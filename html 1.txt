@@ -1,0 +1,171 @@
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DemoWeb-Home</title>
+</head>
+
+<body>
+	<h1>Welcome IBS LOAN MANAGEMENT SYSTEM!</h1>
+	<h2>Login As</h2>
+	<select>
+		<option value="volvo">Existing Customer</option>
+		<option value="saab">Bank Admin</option>
+	</select>
+
+	<form>
+		User name:<br> <input type="text" name="firstname"> <br>
+		Password:<br> <input type="text" name="lastname"> <br>
+		<br> <input type="submit" value="A Existing Customer">
+
+		<div class="item">
+			<figure>
+			<img src="C:\Users\dbatta\Desktop\Sprint 6" alt=""></figure>
+			<p>Home Loan</p>
+			<p class="MT10">
+				<a href="https://capitalfirst.com/personal-loan" class="link">Check EMI</a>
+			</p>
+		</div>
+		<div class="item">
+			<figure>
+			<img src="C:\Users\dbatta\Desktop\Sprint 6" alt=""></figure>
+			<p>Personal Loan</p>
+			<p class="MT10">
+				<a href="https://capitalfirst.com/personal-loan" class="link">Check EMI</a>
+			</p>
+		</div>
+		<div class="item">
+			<figure>
+			<img src="C:\Users\dbatta\Desktop\Sprint 6" alt=""></figure>
+			<p>Vehicle Loan</p>
+			<p class="MT10">
+				<a href="https://capitalfirst.com/personal-loan" class="link">Check EMI</a>
+			</p>
+		</div>
+		<div class="item">
+			<figure>
+			<img src="C:\Users\dbatta\Desktop\Sprint 6" alt=""></figure>
+			<p>Education Loan</p>
+			<p class="MT10">
+				<a href="https://capitalfirst.com/personal-loan" class="link">Check EMI</a>
+			</p>
+		</div>
+	</form>
+	<%-- 	<jsp:include page="/menu" /> --%>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div {
+  width: 150px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 0;
+}
+</style>
+</head>
+<h1>Welcome to IBS LOAN MANAGEMENT PORTAL</h1>
+<h3>IBS Bank Ltd. is an Indian banking and financial services company headquartered in Mumbai, Maharashtra.
+It is the largest bank in India by market capitalisation as of February 2016.</h3>
+<h3 align="right">LOGIN</h3>
+     <div align="center">
+     <p class="solid"><br/><a href="https://laonmanagement/home-loan" class="link">Home Loan</a>
+     </div> 
+     
+	<div align="center">	
+    <p class="solid"><br/> <a href="https://laonmanagement/education-loan" class="link">Education Loan</a>
+    </div>
+		
+	<div align="center">	
+    <p class="solid"><br/> <a href="https://laonmanagement/vehicle-loan" class="link">Vehicle Loan</a>
+    </div>
+    
+	<div align="center">
+    <p class="solid"><br/> <a href="https://laonmanagement/personal-loan" class="link">Personal Loan</a>
+	</div>
+ <hr>
+ <button></buuton>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div {
+  width: 150px;
+  padding: 10px;
+ 
+  margin: 0;
+}
+</style>
+</head>
+<h1 align="center">Welcome to IBS LOAN MANAGEMENT PORTAL</h1>
+<button type="button" >Login</button>
+<ul>
+  <li>IBS Bank Ltd. is an Indian banking and financial services company headquartered in Mumbai, Maharashtra.</li>
+  <li>It is the largest bank in India by market capitalisation as of February 2016.</li>
+  
+</ul>
+
+     <button type="button">Home Loan</button>
+     <button type="button">Education Loan</button>
+     <button type="button">Vehicle Loan</button>
+     <button type="button">Personal Loan</button>
+     <br/>
+     <a href="https://laonmanagement/home-loan" class="link">Home Loan</a>&nbsp;<span>|</span>
+     	
+     <a href="https://laonmanagement/education-loan" class="link">Education Loan</a>&nbsp;<span>|</span>
+
+    <a href="https://laonmanagement/vehicle-loan" class="link">Vehicle Loan</a>&nbsp;<span>|</span>
+    
+    <a href="https://laonmanagement/personal-loan" class="link">Personal Loan</a>&nbsp;<span>|</span>
+	
+ <hr>
+ <button></buuton>
+</body>
+</html>
+
+
+
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
